@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Spotify - Web Player: Music for everyone</title>
+	<link rel="icon" href="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="utility.css">
+</head>
+<body>
+	<div class="container flex bg-black">
+		<div class="left">
+			<div class="close">
+				<img class="invert" src="img/close.svg">
+			</div>
+			<div class="home bg-grey rounded m-1 p-1">
+				<div class="logo">
+					<img class="invert" src="img/logo.svg">
+				</div>
+				<ul>
+					<li><img class="invert" src="img/home.svg" alt="Home">Home</li>
+					<li><img class="invert" src="img/search.svg" alt="Search">Search</li>
+				</ul>
+			</div>
+			<div class="library bg-grey rounded m-1 p-1">
+				<div class="heading">
+					<img class="invert" src="img/playlist.svg" alt="Playlist logo">
+					<h4>Your Library</h4>
+				</div>
+				<div class="songList">
+					<ul>
+						<li>
+							<i class="fa-solid fa-music fa-xl"></i>
+							<div class="info">
+								<div>Abroad Again</div>
+								<div>Jeremy Blake</div>
+							</div>
+							<div class="playnow">
+								<span>Play Now</span>
+								<i class="fa-solid fa-play fa-lg invert"></i>
+							</div>
+						</li>
+						<li>
+							<i class="fa-solid fa-music fa-xl"></i>
+							<div class="info">
+								<div>Blue Ribbons</div>
+								<div>Track</div>
+							</div>
+							<div class="playnow">
+								<span>Play Now</span>
+								<i class="fa-solid fa-play fa-lg invert"></i>
+							</div>
+						</li>
+						<li>
+							<i class="fa-solid fa-music fa-xl"></i>
+							<div class="info">
+								<div>Colony</div>
+								<div>Jeremy Blake</div>
+							</div>
+							<div class="playnow">
+								<span>Play Now</span>
+								<i class="fa-solid fa-play fa-lg invert"></i>
+							</div>
+						</li>
+						<li>
+							<i class="fa-solid fa-music fa-xl"></i>
+							<div class="info">
+								<div>Decimate</div>
+								<div>Jeremy Blake</div>
+							</div>
+							<div class="playnow">
+								<span>Play Now</span>
+								<i class="fa-solid fa-play fa-lg invert"></i>
+							</div>
+						</li>
+						<li>
+							<i class="fa-solid fa-music fa-xl"></i>
+							<div class="info">
+								<div>Final Girl</div>
+								<div>Jeremy Blake</div>
+							</div>
+							<div class="playnow">
+								<span>Play Now</span>
+								<i class="fa-solid fa-play fa-lg invert"></i>
+							</div>
+						</li>
+						<li>
+							<i class="fa-solid fa-music fa-xl"></i>
+							<div class="info">
+								<div>Five of Kind</div>
+								<div>Destiny</div>
+							</div>
+							<div class="playnow">
+								<span>Play Now</span>
+								<i class="fa-solid fa-play fa-lg invert"></i>
+							</div>
+						</li>
+						<li>
+							<i class="fa-solid fa-music fa-xl"></i>
+							<div class="info">
+								<div>Girl on Top</div>
+								<div>Amy Lynn</div>
+							</div>
+							<div class="playnow">
+								<span>Play Now</span>
+								<i class="fa-solid fa-play fa-lg invert"></i>
+							</div>
+						</li>
+						<li>
+							<i class="fa-solid fa-music fa-xl"></i>
+							<div class="info">
+								<div>Girl on Top</div>
+								<div>Amy Lynn</div>
+							</div>
+							<div class="playnow">
+								<span>Play Now</span>
+								<i class="fa-solid fa-play fa-lg invert"></i>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="footer">
+			        <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
+			        <div><a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety &amp; Privacy Center</span></a></div>
+			        <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a></div>
+			        <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a></div>
+			        <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+			        <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="right">
+			<div class="header bg-grey p-1">
+				<div class="nav">					
+					<img class="invert hamburger" src="img/hamburger.svg">
+					<i class="fa-solid fa-circle-chevron-left fa-2x"></i>
+					<i class="fa-solid fa-circle-chevron-right fa-2x"></i>
+				</div>
+				<div class="buttons">
+					<button class="signupbtn">Sign up</button>
+					<button class="loginbtn">Log in</button>
+				</div>
+			</div>
+			<div class="spotifyPlaylist">
+				<!--  Popular artists section -->
+				<div class="popular">
+					<h2>Popular artists</h2>
+					<p><a href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu3C">Show all</a></p>
+				</div>
+				<div class="cardContainer">
+					<div class="card">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/artist/1wRPtKGflJrBx9BmLsSwlU"><img src="img/pritam.jpg" alt="Pritam"></a> 
+						<h3>Pritam</h3>
+						<p>Artist</p>
+					</div>
+					<div class="card">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/artist/4YRxDV8wJFPHPTeXepOstw"><img src="img/arijit.jpg" alt="Arijit Singh"></a>
+						<h3>Arijit Singh</h3>
+						<p>Artist</p>
+					</div>
+					<div class="card">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/artist/1mYsTxnqsietFxj1OgoGbG"><img src="img/rahman.jpg" alt="A. R. Rahman"></a>
+						<h3>A. R. Rahman</h3>
+						<p>Artist</p>
+					</div>
+					<div class="card">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/artist/1mBydYMVBECdDmMfE2sEUO"><img src="img/sachin.jpg" alt="Sachin-Jagar"></a>
+						<h3>Sachin-Jigar</h3>
+						<p>Artist</p>
+					</div>
+					<div class="card">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/artist/4zCH9qm4R2DADamUHMCa6O"><img src="img/anirudh.jpg" alt="Anirudh Ravi"></a>
+						<h3>Anirudh Ravi</h3>
+						<p>Artist</p>
+					</div>
+					<div class="card">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/artist/5wJ1H6ud777odtZl5gG507"><img src="img/vishal.jpg" alt="Vishal Mishra"></a>
+						<h3>Vishal Mishra</h3>
+						<p>Artist</p>
+					</div>
+				</div>
+				<!-- Popular Section artists ends -->
+				<div class="popular-album">
+					<h2>Popular albums</h2>
+					<p><a href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu3B">Show all</a></p>
+				</div>
+				<div class="cardContainer">
+					<div class="card card-2">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/album/0LcyzKKw3RjFKL6ygISTeU"><img src="img/badshah.jpg" alt="Ek Tha Raja"></a>
+						<h3>Ek Tha Raja</h3>
+						<p>Badshah</p>
+					</div>
+					<div class="card card-2">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/album/0Rkv5iqjF2uenfL0OVB8hg"><img src="img/ashiqui.jpg" alt="Aashiqui 2"></a>
+						<h3>Aashiqui 2</h3>
+						<p>Mithoon, Ankit Tiwari, Jeet Gannguli</p>
+					</div>
+					<div class="card card-2">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/album/0a183xiCHiC1GQd8ou7WXO"><img src="img/animal.jpg" alt="ANIMAL"></a>
+						<h3>ANIMAL</h3>
+						<p>Manan Bhardwaj, Vishal Mishra, Jaani</p>
+					</div>
+					<div class="card card-2">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/album/3I3kZyHUtEA9Y59rJkxtk6"><img src="img/sajni.jpg" alt="Sajni"></a>
+						<h3>Sajni ( From...</h3>
+						<p>Ram Sampath, Arijit Singh, Prashant...</p>
+					</div>
+					<div class="card card-2">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/album/45ZIondgVoMB84MQQaUo9T"><img src="img/moosetape.jpg" alt="Moosetape"></a>
+						<h3>Moosetape</h3>
+						<p>Sidhu Moose Wala</p>
+					</div>
+					<div class="card card-2">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/album/5AivaZj0CiQJoDWqVH2pbh"><img src="img/shubh.jpg" alt="Vishal Mishra"></a>
+						<h3>Still Rollin</h3>
+						<p>Shubh</p>
+					</div>
+				</div>
+				<!-- Popular Section Radio artists starts -->
+				<div class="popular-album">
+					<h2>Popular radio</h2>
+					<p><a href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu4h">Show all</a></p>
+				</div>
+				<div class="cardContainer">
+					<div class="card card-2">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/playlist/37i9dQZF1E4oJSdHZrVjxD"><img src="img/radio-1.jpg"></a>
+						<h3>Arijit Singh Radio</h3>
+						<p>With Neha Kakkar, Pritam, KK and more</p>
+					</div>
+					<div class="card card-2">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/playlist/37i9dQZF1E4w8M2kCpzHJK"><img src="img/radio-2.jpg"></a>
+						<h3>Ikka Radio</h3>
+						<p>With Karma, Raga, Muhfaad and more</p>
+					</div>
+					<div class="card card-2">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/playlist/37i9dQZF1E4r1liuq6feHe"><img src="img/radio-3.jpg"></a>
+						<h3>Udit Narayan...</h3>
+						<p>With Kumar Sanu, Alka Yagnik,...</p>
+					</div>
+					<div class="card card-2">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/playlist/37i9dQZF1E4AnYVmEEo8ws"><img src="img/radio-4.jpg"></a>
+						<h3>Diljit Dosanjh...</h3>
+						<p>With Garry Sandhu, Ranjit Bawa,...</p>
+					</div>
+					<div class="card card-2">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/playlist/37i9dQZF1E4sMNJxn3At9Y"><img src="img/radio-5.jpg"></a>
+						<h3>Ilaiyaraaja Radio</h3>
+						<p>With S. Janaki, S. P. Balasubrahmanya...</p>
+					</div>
+					<div class="card card-2">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/playlist/37i9dQZF1E4mZvA09hvuJo"><img src="img/radio-6.jpg"></a>
+						<h3>A.R. Rahman...</h3>
+						<p>With Shankar Mahadevan,...</p>
+					</div>
+				</div>
+				<!-- Featured Charts Section Starts -->
+				<div class="popular-album">
+					<h2>Featured Charts</h2>
+				</div>
+				<div class="cardContainer">
+					<div class="card card-2">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/playlist/37i9dQZEVXbNG2KDcFcKOF"><img src="img/chart-1.jpg"></a>
+						<h3>Top Songs - s...</h3>
+						<p>Your weekly update of the most played...</p>
+					</div>
+					<div class="card card-2">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/playlist/37i9dQZEVXbLp5XoPON0wI"><img src="img/chart-2.jpg"></a
+						><h3>Top Songs - USA</h3>
+						<p>Your weekly update of the most played...</p>
+					</div>
+					<div class="card card-2">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/playlist/37i9dQZEVXbMDoHDwVN2tF"><img src="img/chart-3.jpg"></a>
+						<h3>Top 50 - Global</h3>
+						<p>Your daily update of the most played...</p>
+					</div>
+					<div class="card card-2">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/playlist/37i9dQZEVXbLRQDuF5jeBp"><img src="img/chart-4.jpg"></a>
+						<h3>Top 50 - USA</h3>
+						<p>Your daily update of the most played...</p>
+					</div>
+					<div class="card card-2">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/playlist/37i9dQZEVXbLiRSasKsNU9"><img src="img/chart-5.jpg"></a>
+						<h3>Viral 50 - Global</h3>
+						<p>Your daily update of the most viral trac...</p>
+					</div>
+					<div class="card card-2">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/playlist/37i9dQZEVXbKuaTI1Z1Afx"><img src="img/chart-6.jpg"></a>
+						<h3>Viral 50 - USA</h3>
+						<p>Your daily update of the most viral trac...</p>
+					</div>
+				</div>
+				<!-- Spotify Playlists Section Starts -->
+				<div class="popular-album">
+					<h2>Spotify Playlists</h2>
+					<p><a href="https://open.spotify.com/section/0JQ5DAuChZYPe9iDhh2mJz">Show all</a></p>
+				</div>
+				<div class="cardContainer">
+					<div class="card card-2">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/playlist/37i9dQZF1DWT5lkChsPmpy"><img src="img/playlist-1.jpg"></a>
+						<h3>Workday Lounge</h3>
+						<p>Lounge and chill out music for your...</p>
+					</div>
+					<div class="card card-2">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/playlist/37i9dQZF1DX2M1RktxUUHG"><img src="img/playlist-2.jpg"></a>
+						<h3>All Out 2020s</h3>
+						<p>The biggest songs of 2020s. Cov...</p>
+					</div>
+					<div class="card card-2">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/playlist/37i9dQZF1DWZeKCadgRdKQ"><img src="img/playlist-3.jpg"></a>
+						<h3>Deep Focus</h3>
+						<p>Keep calm and focus with ambien...</p>
+					</div>
+					<div class="card card-2">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/playlist/37i9dQZF1DX41cLva7hoYQ"><img src="img/playlist-4.jpg"></a>
+						<h3>Workday Jazz</h3>
+						<p>Jazz piano ballads to help you focus...</p>
+					</div>
+					<div class="card card-2">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/playlist/37i9dQZF1DWWQRwui0ExPn"><img src="img/playlist-5.jpg"></a>
+						<h3>lofi beats</h3>
+						<p>chill beats, lofi vibes, new tracks...</p>
+					</div>
+					<div class="card card-2">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M"><img src="img/playlist-6.jpg"></a>
+						<h3>Today's Top Hits</h3>
+						<p>Karol G is on top of the Hottest 50!</p>
+					</div>
+			</div>
+				<!-- Trending Episode section starts -->
+				<div class="popular-album">
+					<h2>Trending Episodes</h2>
+					<p><a href="https://open.spotify.com/section/0JQ5DAnM3wGh0gz1MXnu8o">Show all</a></p>
+				</div>
+				<div class="cardContainer">
+					<div class="card card-2">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/episode/6Gl5Y62Znq3M1Fn8ywYRjz"><img src="img/trend-1.jpg"></a>
+						<h3>Welcome back,...</h3>
+						<p>Jun 2021 . 15min</p>
+					</div>
+					<div class="card card-2">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/episode/2nLOsuQXZL4oBbzbYQYYro"><img src="img/trend-2.jpg"></a>
+						<h3>#73: Hotel Of...</h3>
+						<p>Jun 2021 . 93 min</p>
+					</div>
+					<div class="card card-2">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/episode/5A9DkT5qoSsF909vLaOaL0"><img src="img/trend-3.jpg"></a>
+						<h3>Anubis: God of...</h3>
+						<p>Jun 2021 . 16 min</p>
+					</div>
+					<div class="card card-2">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/episode/1x1YHdOpYAjwR48eoz1yLL"><img src="img/trend-4.jpg"></a>
+						<h3>Mahabharata...</h3>
+						<p>Apr 2014 . 24 min</p>
+					</div>
+					<div class="card card-2">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/episode/4ZjiY5692n0Nev7q38tMvB"><img src="img/trend-5.jpg"></a>
+						<h3>Relaxing Rain...</h3>
+						<p>Aug 2019 . 122 min</p>
+					</div>
+					<div class="card card-2">
+						<div class="play"><i class="fa-solid fa-circle-play fa-3x"></i></div>
+						<a href="https://open.spotify.com/episode/0ALpJ8EczwShV1p4qyo0Rj"><img src="img/trend-6.jpg"></a>
+						<h3>Ep 8 - Ye Na Thi...</h3>
+						<p>Apr 2020 . 3 min</p>
+					</div>
+				</div>
+				<div class="playbar">
+					<div class="seekbar">
+						<div class="circle"></div>
+					</div>
+					<div class="abovebar">
+						<div class="songinfo"></div>
+						<div class="songbuttons">
+							<i id="previous" class="fa-solid fa-backward-step fa-2xl"></i>
+							<i id="play" class="fa-solid fa-play fa-2xl"></i>
+							<i id="next" class="fa-solid fa-forward-step fa-2xl"></i>
+						</div>
+						<div class="songtime"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
